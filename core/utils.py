@@ -150,6 +150,10 @@ def draw_bbox(image, bboxes, classes=read_class_names(cfg.YOLO.CLASSES), show_la
         bbox_color = colors[class_ind]
         bbox_thick = int(0.6 * (image_h + image_w) / 600)
         c1, c2 = (coor[1], coor[0]), (coor[3], coor[2])
+        print(c1)
+        print(c2)
+        c1 = (652, 610)
+        c2 = (743, 645)
         cv2.rectangle(image, c1, c2, bbox_color, bbox_thick)
 
         if show_label:

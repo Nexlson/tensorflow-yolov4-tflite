@@ -1,3 +1,5 @@
+# import os
+# os.environ["CUDA_VISIBLE_DEVICES"]="-1"   
 import tensorflow as tf
 from absl import app, flags, logging
 from absl.flags import FLAGS
